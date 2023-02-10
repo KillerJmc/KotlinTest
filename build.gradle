@@ -1,0 +1,15 @@
+import org.gradle.process.internal.JvmOptions
+
+plugins {
+    id "java"
+    id "org.jetbrains.kotlin.jvm" version "1.7.21"
+}
+
+group = "com.jmc"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+}
+
+
