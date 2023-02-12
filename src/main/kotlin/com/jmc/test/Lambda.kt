@@ -25,7 +25,7 @@ fun defaultIt() {
     myPrint("666")
 }
 
-class Calc {
+class MyCalc {
     // Kotlin废除了静态方法
     // 这个”伴生对象“会创建一个静态内部类（static class Companion）
     // 并提供单例实例（static final Companion companion = new Companion）
@@ -47,7 +47,7 @@ fun pass() {
     realPass({ a, b -> a + b }, 3, 4)
 
     // 类方法引用传递
-    realPass(Calc::add, 5, 3)
+    realPass(MyCalc::add, 5, 3)
 
     // 自身类引用传递
     realPass(::add, 3, 6)
